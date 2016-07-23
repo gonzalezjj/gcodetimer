@@ -31,13 +31,14 @@
 
 #include <cmath>
 
+#define EPSILON 0.0000005f
+
 typedef struct _COORDS {
     float x, y, z, e;
 } COORDS;
 
 class Utils {
 public:
-
     static inline void format_time(std::ostream *stream, float time) {
         int h = floor(time / 3600);
         int m = floor((time - 3600 * h) / 60);

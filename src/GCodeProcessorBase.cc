@@ -93,7 +93,7 @@ void GCodeProcessorBase::process_file() {
                     float accel_time = Utils::reduce(accel_time_components, [] (float c, float t) { return max(c, t); }, accel_time_components.x);
 
                     float accel_magnitude = 0.0;
-                    if (accel_time > Config::get()->epsilon) {
+                    if (accel_time > EPSILON) {
                         // Calculate the actual acceleration per component based on accel_time and speed_delta_components
                         COORDS accel = Utils::map(speed_delta_components, [=] (float c) { return c / accel_time; });
 

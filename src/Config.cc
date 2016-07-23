@@ -50,8 +50,6 @@ void Config::load() {
     if (fs::exists(filename))
         pt::read_xml(filename, tree);
 
-    epsilon = tree.get("config.epsilon", 0.0000005f);
-
     max_print_accel = {
         tree.get("config.max_print_accel.x", 200.0f),
         tree.get("config.max_print_accel.y", 200.0f),
@@ -82,8 +80,6 @@ void Config::save() const {
 
     // Create an empty property tree object.
     pt::ptree tree;
-
-    tree.put("config.epsilon", epsilon);
 
     tree.put("config.max_print_accel.x", max_print_accel.x);
     tree.put("config.max_print_accel.y", max_print_accel.y);

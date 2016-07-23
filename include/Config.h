@@ -29,8 +29,6 @@ class Config {
 public:
     static const Config* get();
 
-    float epsilon;
-
     COORDS max_print_accel, max_move_accel;     // mm/s2
     COORDS max_jerk;     // mm/s
     float jerk_efficiency;      // Average jerk compared to the max jerk
