@@ -51,4 +51,4 @@ Edit this file according to your needs. The configuration parameters are:
 # Limitations and Hints
  * The time estimation is very simple. It works very well for my printer (approximately +-2 minutes per printing hour), but you might get different results
  * The M117 command is not standard, so this might not work for all printers. Check http://reprap.org/wiki/G-code#M117:_Display_Message *before* using this software!
- * The Repetier firmware (V0.92.9) does not display M117 messages when printing from SD card by default. Check my fork of the firmware for the necessary changes (2 lines of code).
+ * The Repetier firmware (V0.92.9) does not display M117 messages when printing from SD card by default. Check my fork of the firmware for the necessary changes: https://github.com/gonzalezjj/Repetier-Firmware/tree/feature/m117_in_sd_mode
