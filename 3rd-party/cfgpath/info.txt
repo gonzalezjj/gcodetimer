@@ -1,0 +1,3 @@
+Source: https://github.com/Malvineous/cfgpath
+
+Licensed under public domain
