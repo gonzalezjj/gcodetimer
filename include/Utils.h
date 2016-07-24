@@ -43,7 +43,7 @@ public:
         int h = floor(time / 3600);
         int m = floor((time - 3600 * h) / 60);
         int s = floor(time - 3600 * h - 60 * m);
-        *stream << std::setw(2) << std::setfill('0') << h << ":" << std::setw(2) << std::setfill('0') << m << ":" << std::setw(2) << std::setfill('0') << s;
+        *stream << std::setw(2) << std::setfill('0') << h << "h" << std::setw(2) << std::setfill('0') << m << "m" << std::setw(2) << std::setfill('0') << s << "s";
     }
 
     static inline float pos(float input) {
