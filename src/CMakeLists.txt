@@ -3,7 +3,7 @@ project (gcodetimer)
 
 set(Project_VERSION_MAJOR 1)
 set(Project_VERSION_MINOR 0)
-set(Project_VERSION_REVISION 0)
+set(Project_VERSION_REVISION 1)
 
 # Properties
 set (EXECUTABLE_NAME "${PROJECT_NAME}")
